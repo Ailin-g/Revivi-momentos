@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="keywords" content="TAZAS, VASOS, SUBLIMADOS, PERSONALIZADOS, MATELISTO">
+    <meta name="description" content="Formulario de contacto para realizar pedidos">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="../estilos/estilos.css">
+
+    <script src="https://kit.fontawesome.com/aef1e3d3f6.js" crossorigin="anonymous"></script>
+
+    <title>Pedidos</title>
+</head>
+<body>
+    
+    <div class="container-fluid" style="padding: 0;">
+        <nav class="row navegador" style="padding-left: 0;">
+            <a href="../index.html"><img class="logo" src="../imagenes/logo.png" alt="Logo"></a>
+            <ul class="menu-navegador" style="padding-left: 15px;">
+                <!-- <li class="nav-items"><a href="./index.html"><img class="logo" src="./imagenes/logo.png" alt="Logo"></a></li> -->
+				<li class="nav-items"><a href="../index.html">Inicio</a></li>
+				<li class="nav-items"><a href="./productos.html">Productos</a></li>
+				<li class="nav-items"><a href="./pedidos.html">Pedidos</a></li>
+				<li class="nav-items"><a href="./contacto.html">Contacto</a></li>
+			</ul>
+        </nav>
+        <br>    
+        <h3>Datos de contacto</h3>
+        <div class="row formulario">
+            <form action="#" method="get" class="formulario__form-pedidos">
+                <fieldset>
+                    <legend>Ingrese su pedido</legend>
+                    <label for="descripcion">Detalle del pedido:</label><br>
+                    <textarea class="entradas" name="descripcion" rows="5"></textarea>
+                    <br><br>
+                    <label for="nombre">Nombre: </label><br>
+                    <input class="entradas" type="text" name="nombre"><br>
+                    <!-- <label for="apellido">Apellido: </label>
+                    <input class="entradas" type="text" name="apellido"><br><br> -->
+                    <label for="email">Email: </label><br>
+                    <input class="entradas" type="email" name="email"><br>
+                </fieldset>
+                <label for="acepta">¿Desea recibir información sobre otros productos?</label>
+                <input type="checkbox" name="acepta" value="1" /><br>
+                <label for="talle">Seleccione su producto</label>
+                <select name="talles">
+                    <option value="taza">Taza</option>
+                    <option value="vaso">Vaso</option>
+                </select><br><br>
+                <input type="submit" name="enviar" value="Enviar formulario">
+                <button class="abrir-modal">Limpiar datos</button>
+            </form>
+        </div>
+        
+        <br>
+        <br>
+
+		<footer class="pieDePag">
+            <ul>
+                <li class="listContactos"><i class="fab fa-facebook iconos"></i>Revivi.momentos</li>
+                <li class="listContactos"><i class="fab fa-whatsapp iconos"></i>1133226655</li>
+                <li class="listContactos"><i class="far fa-envelope iconos"></i>revivi.momentos@gmail.com</li>
+                <li class="listContactos"><i class="fas fa-map-marker-alt iconos"></i>Retira sin cargo en Capital Federal o te lo enviamos a tu casa!</li>
+            </ul>
+		</footer>
+    </div>
+    
+    <script>
+        var btnAbrir = document.querySelector('.abrir-modal'); 
+        var btnCerrar = document.querySelector('.cerrar-modal'); 
+        var modal = document.querySelector('.modal');
+        var cambiarEstado = () => {
+            modal.classList.toggle('abierto')
+        }
+        btnAbrir.addEventListener('click', cambiarEstado);
+        btnCerrar.addEventListener('click', cambiarEstado);
+    </script>
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+   
+</body>
+</html>
