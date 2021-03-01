@@ -19,7 +19,7 @@
     <div class="container-fluid" style="padding: 0;">
         <nav class="row navegador" style="padding-left: 0;">
             <a href="./index.html"><img class="logo" src="./imagenes/logo.png" alt="Logo"></a>
-            <ul class="menu-navegador" style="padding-left: 15px;">
+            <ul class="menu-navegador menu-completo" style="padding-left: 15px;">
                 <!-- <li class="nav-items"><a href="./index.html"><img class="logo" src="./imagenes/logo.png" alt="Logo"></a></li> -->
 				<li class="nav-items"><a href="./index.html">Inicio</a></li>
 				<li class="nav-items"><a href="./secciones/productos.html">Productos</a></li>
@@ -27,7 +27,23 @@
                 <li class="nav-items"><a href="./secciones/preguntas.html">Preguntas Frecuentes</a></li>
 				<li class="nav-items"><a href="./secciones/contacto.html">Contacto</a></li>
 			</ul>
+
+            <div class="dropdown">
+                <button class="menu-hamburguesa" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <ul class="menu-navegador" style="padding-left: 15px;">
+                        <li class="nav-items"><a href="./index.html">Inicio</a></li>
+                        <li class="nav-items"><a href="./secciones/productos.html">Productos</a></li>
+                        <li class="nav-items"><a href="./secciones/pedidos.html">Pedidos</a></li>
+                        <li class="nav-items"><a href="./secciones/preguntas.html">Preguntas Frecuentes</a></li>
+                        <li class="nav-items"><a href="./secciones/contacto.html">Contacto</a></li>
+                    </ul>
+                </div>
+              </div>
         </nav>
+
         <br>
         
         <div id="carouselExampleControls" class="carousel slide col-md-7 container seccion-carousel" data-ride="carousel">
